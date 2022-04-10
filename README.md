@@ -9,4 +9,3 @@ ___
   - Django framework 
   - Postgresql 
   - Celery(Redis)
-  - fsd

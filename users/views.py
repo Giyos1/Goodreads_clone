@@ -21,12 +21,10 @@ class RegisterView(View):
             create_form.save()
             return redirect('users:login')
 
-        else:
-            create_form = UserCreateForm()
-            context = {
-                "form": create_form
-            }
-            return render(request, 'users/register.html', context)
+        context = {
+            "form": create_form
+        }
+        return render(request, 'users/register.html', context)
 
 
 class LoginView(View):

@@ -60,3 +60,5 @@ class RegistrationTestCase(TestCase):
         user_count = User.objects.count()
         self.assertEqual(user_count,1)
         self.assertFormError(response,"form","username","A user with that username already exists.")
+
+

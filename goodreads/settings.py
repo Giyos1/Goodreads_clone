@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'goodreads.middleware.SimpleMiddleware',
 ]
 
 ROOT_URLCONF = 'goodreads.urls'
@@ -129,5 +130,17 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'rustamovj399@gmail.com'
+# EMAIL_HOST_PASSWORD = 'epmtasvdnrcqztwc'
+# EMAIL_PORT = 456
+
+
+"""mailtrap bilan ishlasa xam boladi"""
+# EMAIL_HOST = 'smtp.mailtrap.io'
+# EMAIL_HOST_USER = '030f9dc4aaed26'
+# EMAIL_HOST_PASSWORD = 'db2e89af34116e'
+# EMAIL_PORT = '2525'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
